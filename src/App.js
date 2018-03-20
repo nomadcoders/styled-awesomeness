@@ -9,14 +9,17 @@ injectGlobal`
   }
 `;
 
+const Card = styled.div`
+  background-color: red;
+`;
+
 const Container = styled.div`
   height: 100vh;
   width: 100%;
   background-color: pink;
-`;
-
-const Card = styled.div`
-  background-color: red;
+  ${Card} {
+    background-color: blue;
+  }
 `;
 
 const Button = styled.button`
